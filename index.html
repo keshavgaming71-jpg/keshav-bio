@@ -8,6 +8,51 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
+
+  .bio{
+  max-width:900px;
+  margin:120px auto;
+  padding:0 24px;
+}
+
+.bio-images{
+  display:flex;
+  gap:32px;
+  flex-wrap:wrap;
+  margin-bottom:48px;
+}
+
+.bio-images img{
+  width:180px;
+  height:240px;
+  object-fit:cover;
+  border-radius:4px;
+}
+
+.bio-text{
+  max-width:600px;
+  font-size:1rem;
+  line-height:1.7;
+  color:#bdbdbd;
+}
+
+/* 📱 Mobile */
+@media (max-width:768px){
+  .bio-images{
+    justify-content:center;
+  }
+
+  .bio-images img{
+    width:100%;
+    max-width:280px;
+    height:auto;
+  }
+
+  .bio-text{
+    font-size:0.95rem;
+  }
+}
+
 :root{
   --bg:#070707;
   --text:#f2f2f2;
